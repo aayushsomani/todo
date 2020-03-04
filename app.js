@@ -73,7 +73,7 @@ app.post("/api/edittodo",function(req,res)
 	res.send(id.toString());
 });
 
-app.listen(3000,function()
+app.listen(process.env.PORT || 3000,function()
 {
 	console.log("server started listening on port 3000");
 });
